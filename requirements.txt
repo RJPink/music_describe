@@ -1,0 +1,24 @@
+# music-describe — TinyMU inference dependencies
+# Verified working set, 2026-10-21 (python 3.11, torch cu121).
+#
+# IMPORTANT: torch, torchaudio, torchvision MUST stay on the same 2.4.1+cu121
+# release, or torchaudio crashes with "undefined symbol: _ZNK5torch8autograd4Node4nameEv".
+# On CPU-only machines, install the CPU wheels instead:
+#   pip install torch==2.4.1 torchaudio==2.4.1 torchvision==0.19.1 --index-url https://download.pytorch.org/whl/cpu
+torch==2.4.1+cu121
+torchaudio==2.4.1+cu121
+torchvision==0.19.1+cu121
+--extra-index-url https://download.pytorch.org/whl/cu121
+transformers==4.46.3
+huggingface_hub==0.30.1
+accelerate==1.5.2
+peft==0.15.2
+numpy==1.26.3
+einops==0.7.0
+timm==0.4.12
+loguru==0.7.3
+tqdm==4.67.1
+PyYAML==6.0.2
+audiomentations==0.40.0
+wandb==0.19.10
+torchlibrosa==0.1.0

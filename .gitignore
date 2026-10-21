@@ -1,0 +1,6 @@
+TinyMU/
+ckpt/
+*.pt
+__pycache__/
+*.music.json
+*.tinymu.json
